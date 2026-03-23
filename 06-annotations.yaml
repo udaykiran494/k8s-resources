@@ -1,5 +1,5 @@
-apiVerison: v1
-kind: pod
+apiVersion: v1
+kind: Pod
 metadata: 
   name: annotations-demo
   labels:
@@ -10,8 +10,7 @@ metadata:
   annotations:
     jenkins-url: "http://jenkins.joindevops.com/build/job/5"
     imageregistry: "https://hub.docker.com/"
-
 spec:
   containers: 
-    - name: nginx
-      image: nginx
+  - name: nginx
+    image: nginx
